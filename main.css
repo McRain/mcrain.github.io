@@ -1,0 +1,130 @@
+#avatar[data-v-ecfaf5aa]{background-image:url(/assets/166c7094015b29e4d1af.jpg);width:150px;height:150px;background-size:cover;background-position:top center;border-radius:50%;transform:perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);border:5px solid #e6e6e6;box-shadow:0 10px 10px 15px rgba(0,0,0,.3);transition:.4s ease-in-out transform}#avatar[data-v-ecfaf5aa]:hover{transform:translate3d(0px, 0px, -250px)}
+
+.section[data-v-ac11a4b2]{position:absolute;right:0;left:0;bottom:0;top:0;display:flex;justify-content:center;flex-direction:column;align-items:center}
+
+.slider-container[data-v-738d50e1] {
+    width: 100%;
+    /* Занимает 100% ширины родителя */
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.slider[data-v-738d50e1] {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /*  Не нужно задавать фиксированную ширину для slider.  Flexbox сам подстроится.  */
+}
+.slide[data-v-738d50e1] {
+    width: 100%;
+    /* Слайд занимает 100% ширины slider-container */
+    /*height: 400px;*/
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.slider-button[data-v-738d50e1] {
+    position: absolute;
+    bottom: 0px;
+    /*transform: translateY(-50%);*/
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.slider-button[data-v-738d50e1]:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.prev[data-v-738d50e1] {
+    left: 10px;
+}
+.next[data-v-738d50e1] {
+    right: 10px;
+}
+
+.vlist[data-v-64ab619d]{display:flex;flex-direction:column;padding:10px;gap:20px}.vlist .rowhead[data-v-64ab619d]{width:100%;text-align:center}.vlist .row[data-v-64ab619d]{display:grid;grid-template-columns:50% 50%;border-bottom:1px solid #000}.vlist .row .textceil[data-v-64ab619d]{padding:10px;display:flex;flex-direction:column;justify-content:center}.vlist .row .imageceil[data-v-64ab619d]{padding:10px;display:flex;flex-direction:column;justify-content:center}
+svg[data-v-66598759]{fill:var(--symbolColor)}svg use title[data-v-66598759]{background-color:#000;color:#fff;text-align:center;border-radius:6px;padding:5px 0}
+
+.spinner[data-v-4736cf19] {
+    width: 40px;
+    height: 40px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #3498db;
+    border-radius: 50%;
+    animation: spin-4736cf19 0.8s linear infinite;
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes spin-4736cf19 {
+to { transform: rotate(360deg);
+}
+}
+  
+
+.toast-container[data-v-3aed840a] {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    left: 10px;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    pointer-events: none;
+    user-select: none;
+}
+.toast {
+&[data-v-3aed840a] {
+    background-color: var(--popupbgcolor);
+    padding: 10px;
+    min-width: 256px;
+    min-height: 64px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 3px 0 rgba(12, 12, 12, 0.836);
+    pointer-events: all;
+    }
+.toastview[data-v-3aed840a]{
+        font-size: 1.2em;
+        max-width: 300px;
+}
+}
+.toast-enter-active[data-v-3aed840a],
+.toast-leave-active[data-v-3aed840a] {
+    transition: opacity 0.5s;
+}
+.toast-enter-from[data-v-3aed840a],
+.toast-leave-to[data-v-3aed840a] {
+    opacity: 0;
+}
+
+
+.alert {
+    display: flex;
+    flex-direction: row;
+.alerticon {
+        margin: 10px;
+        fill: rgb(255, 0, 0);
+}
+.infoicon {
+        margin: 10px;
+        fill: rgb(98, 174, 236);
+}
+.warningicon {
+        margin: 10px;
+        fill: rgb(194, 191, 55);
+}
+.text {
+        font-size: 1.1em;
+        display: flex;
+        width: 100%;
+        align-items: center;
+}
+}
+
+html{--text-color-normal: hsl(0, 0%, 13%);--text-color-inver:#b43b3b;--bgcolor:rgb(226, 226, 226);--bordercolor:rgba(29, 21, 23, 1);--button-info-bg:rgb(158, 156, 156);--symbolColor:rgb(99, 145, 99)}html[data-theme=dark]{--btnw:64px;--text-color-normal:#c5c9cf;--text-color-inver:#610404;--text-color-a:#2cb91f;--text-focused:#eeee80e3;--bg-focused:rgba(0,0,0,0.25);--bgcolor:rgb(35, 31, 32);--symbolColor:rgb(142, 197, 142);--symbolColorAlpha:rgba(142, 197, 142,0.5);--panelbgcolor:rgba(41, 32, 35, 0.85);--panelbgcolora:rgba(51, 51, 51, 0.3);--popupbgcolor:rgba(51, 51, 51, 0.863);--popupshadowcolor:rgba(32, 32, 32, 0.877);--tooltip-bgcolor:rgba(0,0,0,.9);--bordercolor: rgba(29, 21, 23, 0.95);--button-info-bg:rgb(66, 65, 65);--button-info-active-bg:rgb(97, 94, 94);--button-info-passive-bg:rgba(87, 87, 87, 0.5);--button-info-border:rgba(5, 4, 4, 0.548);--button-icon-fill:rgba(197, 194, 194, 0.925);--button-warn-bg:rgb(128, 0, 0);--button-warn-active-bg:rgb(150, 26, 26);--button-warn-passive-bg:rgb(95, 43, 43);--button-warn-border:rgba(5, 4, 4, 0.548)}*{scrollbar-width:thin;scrollbar-color:var(--bordercolor) var(--button-info-bg)}*::-webkit-scrollbar{width:12px}*::-webkit-scrollbar-track{background:#424242}*::-webkit-scrollbar-thumb{background-color:#232324;border-radius:20px;border:3px solid #000}.absoluteClass{top:0;left:0;right:0;bottom:0;position:absolute}html,body{margin:0;padding:0;width:100%;height:100%;color:var(--text-color-normal);font-size:20px;overflow:hidden}html a,body a{color:var(--text-color-a)}html #app,body #app{top:0;left:0;right:0;bottom:0;position:absolute}html #app .app,body #app .app{display:flex;height:100vh}.left-sidebar{width:250px;background-color:#333;padding:20px;box-sizing:border-box}.left-sidebar .menu{padding-top:20px}.left-sidebar .menu .hover-underline{font-size:1rem;position:relative;display:inline-block;cursor:pointer;width:100%;margin-top:20px;margin-bottom:20px}.left-sidebar .menu .hover-underline::after,.left-sidebar .menu .hover-underline::before{content:"";position:absolute;width:100%;height:2px;background:linear-gradient(to right, #ff0000, #00ffff);bottom:-5px;left:0;transform:scaleX(0);transform-origin:right;transition:transform .4s ease-out}.left-sidebar .menu .hover-underline::before{top:-5px;transform-origin:left}.left-sidebar .menu .hover-underline:hover::after,.left-sidebar .menu .hover-underline:hover::before{transform:scaleX(1)}.left-sidebar ul{list-style:none;padding:0;margin:0}.left-sidebar li{margin-bottom:10px}.left-sidebar a{color:var(--text-color-normal);text-decoration:none;display:block;padding:8px 12px;border-radius:5px}.left-sidebar a:hover{background-color:#555}.content-area{flex:1;padding:20px;box-sizing:border-box;position:relative;background:radial-gradient(#333, #000);overflow-y:auto}.section{padding:15px}.section h2{margin-top:0;margin-bottom:10px;width:100%;text-align:center}.contact{display:flex;justify-content:center;flex-direction:column;align-items:center;gap:50px;height:100%}.skillblock h3{width:100%;text-align:center}.skillblock .skilllist{display:flex;gap:10px;flex-wrap:wrap}.skillblock .skilllist span{padding:5px;height:24px;background-color:#4343bd;border-radius:5px}.aboutlist ul{line-height:2em}.glowlist{display:flex;flex-direction:column}.glowlist ul{margin:0;padding:0;display:flex;transform:translate(0, 0)}.glowlist ul li{list-style:none;margin:0 15px;cursor:url(/assets/c8c4a95582b52f857082.png),auto}.glowlist ul li a{position:relative;display:block;width:60px;height:60px;text-align:center;line-height:63px;background:#333;border-radius:50%;font-size:1em;color:#666;transition:.5s}.glowlist ul li a .growicon{opacity:1;transition:opacity .2s ease 0s}.glowlist ul li a .title{position:absolute;bottom:0;top:0;width:100%;text-align:center;font-size:.7em;color:aqua}.glowlist ul li a .glowtitle{position:absolute;bottom:0;top:0;width:100%;text-align:center;font-size:.7em;opacity:0;transition:opacity .2s ease .1s}.glowlist ul li a:hover .glowtitle{opacity:1}.glowlist ul li a:hover .growicon{opacity:0}.glowlist ul li a::before{content:"";position:absolute;top:0;left:0;width:100%;height:100%;border-radius:50%;background:#ffee10;transition:.2s;transform:scale(0.9);z-index:-1}.glowlist ul li a:hover::before{transform:scale(1.1);box-shadow:0 0 15px #ffee10}.glowlist ul li a:hover{color:#ffee10;box-shadow:0 0 5px #ffee10;text-shadow:0 0 5px #ffee10}
